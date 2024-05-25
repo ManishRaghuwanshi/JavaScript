@@ -2,5 +2,5 @@
 /* multiline 
    comment 
 */
-var comment = "manish raghuwanshi JavaScript Learning";
+var comment = "manish raghuwanshi JS Learning";
 console.log(comment);
