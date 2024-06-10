@@ -1,0 +1,137 @@
+Chapter 1: Data Types
+1.1 Adding Javascript
+1.2 Variables
+1.3 Data Types
+1.4 Strings
+1.5 String Methods
+1.6 Numbers
+1.7 Loose Equality Vs Strict Equality
+1.8 Type Conversion
+1.9 Arrays
+1.10 Boolean Values And Comparison Operators
+
+Chapter 2: Control Flow
+2.1 For Loop
+2.2 While Loop
+2.3 Do While Loop
+2.4 if / else if / else
+2.5 Nested if Statement
+2.6 Break And Continue
+2.7 Logical Operators
+2.8 Variable and Block Scope
+2.9 Ternary Operator
+2.10 Switch Statement
+
+Chapter 3: Functions
+3.1 Function and Function Expression
+3.2 Function Parameters and Arguments
+3.3 Return Statement
+3.4 Arrow Function
+3.5 Higher Order Function - Callbacks
+3.6 Higher Order Function - Returning Functions
+3.7 IIFE
+3.8 setTimeout And setInterval
+3.9 Hoisting
+
+Chapter 4: Objects
+4.1 Object Introduction
+4.2 Function Vs Methods
+4.3 "this" Keyword
+4.4 forEach Method
+4.5 Objects inside Array
+4.6 Math Object
+4.7 Call, Apply, and Bind
+4.8 Pass by Value and Pass by Reference
+4.9 for-in Loop
+
+Chapter 5: DOM
+5.1 DOM Introduction
+5.2 Query Selector
+5.3 Other Ways to Access Elements
+5.4 innerText Vs innerHTML
+5.5 Getting And Setting the Attribute
+5.6 Adding the Style
+5.7 Add, Remove And Replace Class
+5.8 Parent, Children, and Sibling
+5.9 Event Basics
+5.10 Creating And Removing Element
+5.11 Bubbling And Delegation
+
+Chapter 6: DOM - Forms
+6.1 Submit Event
+6.2 Regular Expression
+6.3 Basic Form Validation
+6.4 Keyboard Event
+
+Chapter 7: Array Methods
+7.0 Array Methods
+7.1 Slice
+7.2 Splice
+7.3 At
+7.4 Map
+7.5 Filter
+7.6 Reduce
+7.7 Find
+7.8 findIndex
+7.9 Some and Every
+7.10 Flat Method
+7.11 flatMap Method
+7.12 Sorting Arrays
+7.13 Chaining of Methods
+
+Chapter 8: Date
+8.1 Date and Time
+8.2 Date and Time Methods
+8.3 Digital Clock
+
+Chapter 9: LocalStorage
+9.1 Local Storage Intro
+9.2 Set and Get Items
+9.3 Deleting Items
+9.4 Store Complex Data
+
+Chapter 10: OOP
+10.1 Constructor and NEW Operator
+10.2 Prototypes
+10.3 Prototypical Inheritance
+10.4 ES6 Classes
+10.5 Setters and Getters
+10.6 Static Methods
+10.7 Class Inheritance
+10.8 Inheritance by Prototypes
+10.9 Chaining of Methods
+
+Chapter 11: Async JS
+11.1 Async Code
+11.2 XML Http Request
+11.3 Status Code
+11.4 Callback Function
+11.5 Extracting JSON Data
+11.6 Callback Hell
+11.7 Basics of Promise
+11.8 Chaining of Promise
+11.9 Fetch API
+11.10 Async Await
+11.11 Custom Errors
+11.12 Async Await without Return Statement
+11.13 Error Handling using try-catch Method
+
+Chapter 12: ES6
+12.1 Array De-structuring
+12.2 Object De-structuring
+12.3 Spread Operator
+12.4 Rest Operator
+12.5 Short Circuiting
+12.6 Nullish Coalescing Operator
+12.7 for-of Loop
+12.8 Enhanced Object Literals-Shortcuts
+12.9 Optional Chaining
+12.10 Looping Objects
+12.11 Sets
+12.12 Map Intro and Map Iteration
+
+Chapter 13: Modern Tooling
+13.1 Importing and Exporting ES6 Modules
+13.2 Top Level Await ES2022
+13.3 Module Pattern
+13.4 Intro to NPM
