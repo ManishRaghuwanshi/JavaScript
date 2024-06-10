@@ -102,3 +102,37 @@ createBtn.addEventListener('click', () => {
 })
 
 // event bubling and deligation
+// event bubbling : when we apply event listners to elements 
+// then child event runs then parent then grandparent ... then root element
+// not matter where you have created event listners
+let liElement = document.querySelector('li');
+let eventLi = liElement.addEventListener("click", ()=>{
+    console.log("li clicked");
+})
+let ulElement = document.querySelector('ul');
+let eventUl = ulElement.addEventListener("click", ()=>{
+    console.log("ul clicked");
+})
+
+let olElement = document.querySelector('ol');
+let eventOl = olElement.addEventListener("click", (e)=>{
+    console.log("ol clicked");
+    if(e.target.nodeName="LI"){ // no need to add event listener to every li, this is called deligation.
+        e.target.remove();
+    }
+})
+
+// copy event 
+
+let copyrightElement = document.querySelector('.para2')
+copyrightElement.addEventListener("click", (e)=>{
+    console.log("you dare to copy this ");
+    // also insert links and do other things while someone copy your content
+})
+
+// mouse move event : if we go inside anyone boundry and then move (moving outside the boundry no considered as mouse move event)
+// generally we use the this for a box
+
+copyrightElement.addEventListener('mousemove', (e) => {
+    console.log(e.offsetX, e.offsetY);
+})
