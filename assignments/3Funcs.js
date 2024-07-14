@@ -47,7 +47,47 @@ greet(person);
 which take string and firstUpperCaseWord function as an arguments. 
 firstUpperCaseWord is function which make first word UpperCase from a given String.
 */
+let firstUpperCaseWord = str => str.trim().charAt(0).toUpperCase()  + str.trim().slice(1);
+let transformer = (str, fun) => fun(str);
+console.log(transformer("       manish", firstUpperCaseWord));
 
-let firstUpperCaseWord = () =>{
-  
+// 3.7: Guess the Output And Explain Why?
+let arrowFunction = (name = 'Coders') => {
+    `Welcome ${name}`;
+};
+console.log(arrowFunction('Programmers'));
+// undefined, because we are not returning any value, just have written the statement
+
+/*
+3.8: Create a JavaScript Function to find the area of a triangle 
+where lengths of the three of its sides 
+are 5, 6, 7. : Area = Square root of√s(s - a)(s - b)(s - c) 
+where s is half the perimeter, or (a + b + c)/2.
+*/
+let triangleArea = (a, b, c) => {
+  let radius = (a+b+c)/2;
+  let area = radius *(radius -a)*(radius-b)*(radius-c);
+  area = Math.sqrt(area);
+  console.log(area);
 }
+triangleArea(5,6,7)
+
+// 3.9: Create a JavaScript Function to capitalize the first letter of each word of a given string.
+// we use regular expressions to find any type of whitespace
+let position = [];
+let findSpace = (str) => {
+  let capitalizedStr = str.charAt(0).toUpperCase() + str.slice(1);
+  const regex = /\s/g;  // /g is a global variable which allow us to search all the matches not just the first match
+  const matches = str.matchAll(regex);
+  for(const matched of matches){
+    match = matched.index;
+    if(match <= str.length){
+      capitalizedStr = capitalizedStr.slice(0, match+1) + capitalizedStr.charAt(match+1).toUpperCase() + capitalizedStr.slice(match+2);
+    }
+  }
+  return capitalizedStr;
+}
+
+
+let capitalize = (str, fun) => fun(str);
+console.log( capitalize("my name is manish raghuwanshi", findSpace));
