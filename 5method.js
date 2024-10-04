@@ -42,7 +42,7 @@ let organisation = {
 }
 
 organisation.info("manish", "CSE");
-organisation.info("lavanya", "MCA");
+organisation.info("Sachin", "MCA");
 
 let franchise = {
     name: "VIT Bhopal",
@@ -55,7 +55,7 @@ let franchise = {
 //call method
 let information = organisation.info;
 information.call(franchise, "manoj", "BA");
-information.call(franchise, "Shreyata", "PHD");
+information.call(franchise, "Abhishet", "BSc");
 information.call(organisation, "swati", "BA");
 console.log(franchise.students);
 console.log(organisation.students);

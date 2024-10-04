@@ -30,12 +30,13 @@ const b = 10;
 */
 
 //Hoisting of functions
-// works with traditional/normal functions are fully hoited
-console.log("manish");
+// works with traditional/normal functions are fully hoisted
+console.log(myFunc("manish"));
+
 function myFunc(name){
     return name;
 }
-//other type of functions where assign funcitons to variables or function expression type also hoisting won't work.
+// function expression are not hoisted so, they can't be called before declaration
 // when we assign a function to a variable, hoisting will work as the vaiable behaviour(in terms of hoisting)
 // console.log(myfunc(4));
 // let myfunc = (name) => {

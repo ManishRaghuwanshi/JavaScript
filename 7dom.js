@@ -2,7 +2,7 @@
 // created by the browser as the html load into the browser.
 // browser create objet of html called 'document object'
 //in document object there is model of complete html in tree like structure 
-
+console.log(document);
 console.log(document.URL);
 //get content 
 //get html element/s using querySelector/All
@@ -21,7 +21,7 @@ console.log('selected by id: ', idResults);
 
 // selection is the first step and modification is the next step
 // there are several method available, not only querySelector/All like getElementById, getElementByClassName and getElementByTagName etc.
-// but we should go with querySelector, not need to use different selector methods
+// but we should go with querySelector, not need to use different selector methods for different types
 
 //changing content
 
@@ -29,7 +29,7 @@ let wrapper = document.querySelector('.wrapper');
 console.log("wrapper class : ",wrapper);
 console.log("inner html (wrapper): ", wrapper.innerHTML);
 
-// wrapper.innerText = "<p>hi</p>" // overwrite original
+// wrapper.innerText = "hi" // overwrite original
 // wrapper.innerHTML = "<p>hi</p>"; // overwrite original
 
 let attr = document.querySelector('a');
@@ -57,8 +57,9 @@ para.classList.replace("para", "para2");
 let parent = document.querySelector(".wrapper");
 console.log("parent children elements: ", parent.children);//return html collection 
 // we can't use foreach on html collection
+// from method create new shallow-copied array from array-array/iterable object(NodeList, arguments, Set, Map)
 Array.from(parent.children).forEach(function(element) {
-    element.classList.add('newClass')
+    element.classList.add('newClass')   
 })
 console.log("added class in all children", parent);
 
@@ -73,9 +74,9 @@ console.log("next sibling: ", nextSibling);
 let prevSibling = child.previousElementSibling;
 console.log("previous sibling: ", prevSibling);
 
-//note : in js we can pass any functionality as an argument
+//note : in js we can pass any functionality(functions) as an argument
 
-//event handlers
+//event handlers   (as handlers are also functions that are invoked in response to events)
 
 let eventHandler = document.querySelector('.btn');
 eventHandler.addEventListener('click', ()=>{

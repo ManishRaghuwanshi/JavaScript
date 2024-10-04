@@ -15,7 +15,7 @@ console.log(studentInfo.name);
 let varName = "name";
 console.log(studentInfo[varName]);
 //update value of studentInfo (object)
-studentInfo.name = "lavanya";
+studentInfo.name = "raj kamal";
 studentInfo["id"] = "19BCE10438";
 console.log(studentInfo.name);
 console.log(studentInfo.id);
@@ -57,7 +57,7 @@ let num = 3.6;
 console.log(Math.round(3.8));//round a number
 console.log(Math.floor(num));//lower integer
 console.log(Math.ceil(num));//uper integer
-console.log(Math.trunc(num));// removes decimal 
+console.log(Math.trunc(num));// truncate removes decimal 
 console.log(Math.random());// gives randrom number from 0 to 1
 // primitive types like "nummber", "string", etc are not the reference types
 // object, array and function are reference types 

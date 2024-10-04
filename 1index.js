@@ -56,14 +56,14 @@ console.log(result.includes('my')); // case sensitive, return true or false
 
 let myName = "my capability is more than you can";
 // slice method 
-console.log(myName.slice(0, 5)); // included 0-4 characters
+console.log(myName.slice(3, 5)); // included 3 and 4 (followed 0 index) character
 
 // any of above methods don't mutate the string
 //Strings are immutable (can't change directly).
 
 let favColors = "Levender Yellow Black Maroon"; //string
 
-let arrColors = favColors.split(" "); // array of colors
+let arrColors = favColors.split(" "); // array of colors 
 
 console.log(arrColors); 
 
@@ -83,6 +83,7 @@ console.log(typeof(rollNumber));
 
 let result2 = "my roll number is " + rollNumber; // dynamically generated string, that why we call js as loosly type language
 console.log(result2);
+console.log(typeof(result2));
 
 let rollNumber2 = 234;
 // loose equality vs strict equality
@@ -98,7 +99,7 @@ console.log(numberType, typeof numberType);
 let numberType2 = 334;
 let stringType2 = String(numberType2);
 console.log(stringType2, typeof stringType2);
-let age = 23; // 0 value of a number and empty string count as false in Boolean method
+let age = 9; // 0 value of a number and empty string count as false in Boolean method
 let booleanValue = Boolean(age);
 console.log(booleanValue, typeof booleanValue);
 
@@ -143,6 +144,8 @@ console.log(boolValue, boolValue2);
 let email = "manish@gmail.com";
 let booleanValue3 = email.includes("@");
 console.log(booleanValue3);
+console.log(4>5);
+
 
 // comparison operators always return boolean value 
 // comparison operators : ==, ===, !=, !==, >, <, >=, <=

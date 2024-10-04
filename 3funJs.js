@@ -12,7 +12,9 @@ let a = 10;
 let b = 20;
 console.log(a,b);
 console.log(swap1(a,b));
-// function expression : when we assign function to variable. 
+// function expression : when we assign function to variable.
+// anynonymous function : when a function does not have a name  
+// this function does not have a name but it is assigned to the variable so that it can be called
 let anonymousFun = function(name){
     console.log(name, "you are an anonymous function");
 }
@@ -41,7 +43,7 @@ let sumOfFour = (a, b, c, d) => a+b+c+d;
 
 console.log(sumOfThree(2,3,4));
 console.log(sumOfFour(2,3,4,5));
-let attend = name => name; // single line, automatically returned 
+let attend = name => name; // single line, automatically returned dd
 console.log(attend("manoj"));
 
 // functions : creates a new "this" context
