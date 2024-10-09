@@ -103,9 +103,12 @@ createBtn.addEventListener('click', () => {
 })
 
 // event bubling and deligation
-// event bubbling : when we apply event listners to elements 
-// then child event runs then parent then grandparent ... then root element
-// not matter where you have created event listners
+/*
+event bubbling : when we apply event listners to elements 
+then child event runs then parent then grandparent ... then root element
+not matter where you have created event listners
+event delegation: taking advantage of bubbling applying event listners to parent instead of every child element
+*/
 let liElement = document.querySelector('li');
 let eventLi = liElement.addEventListener("click", ()=>{
     console.log("li clicked");
